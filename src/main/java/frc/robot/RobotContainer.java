@@ -75,6 +75,7 @@ public class RobotContainer {
     //[Veteran Challenge] Arm moves with Trigger
 
 
+    
     // Setup SmartDashboard options
     chooser.setDefaultOption("Auto Routine Distance", new AutonomousTime());
     chooser.addOption("Auto Routine Time", new AutonomousTime());
