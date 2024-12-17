@@ -18,7 +18,7 @@ public class TurnTime extends Command {
   private long startTime;
 
   /**
-   * Creates a new TurnTime.
+   * Creates a new TurnTime command.
    *
    * @param speed The speed which the robot will turn. Negative is in reverse.
    * @param time How much time to turn in seconds

@@ -4,10 +4,9 @@
 
 package frc.robot.commands.auto;
 
-import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 
-public class AutonomousTime extends SequentialCommandGroup {
+public class AutoTime extends SequentialCommandGroup {
   /**
    * Creates a new Autonomous Drive based on time. This will drive out for a period of time, turn
    * around for time (equivalent to time to turn around) and drive forward again. This should mimic
@@ -15,7 +14,7 @@ public class AutonomousTime extends SequentialCommandGroup {
    *
    * @param drivetrain The drive subsystem on which this command will run
    */
-  public AutonomousTime() {
+  public AutoTime() {
     addCommands(
         new DriveTime(-0.6, 2.0),
         new TurnTime(-0.5, 1.3),

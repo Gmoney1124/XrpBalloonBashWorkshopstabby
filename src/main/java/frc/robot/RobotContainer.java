@@ -11,7 +11,8 @@ import edu.wpi.first.wpilibj.StadiaController.Button;
 import frc.robot.commands.ArcadeDrive;
 import frc.robot.commands.ArmReset;
 // import frc.robot.commands.ArmSetAngle;
-import frc.robot.commands.auto.AutonomousTime;
+import frc.robot.commands.auto.AutoTime;
+import frc.robot.commands.auto.AutoDistance;
 import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -71,8 +72,8 @@ public class RobotContainer {
 
 
     // Setup SmartDashboard options
-    chooser.setDefaultOption("Auto Routine Distance", new AutonomousTime());
-    chooser.addOption("Auto Routine Time", new AutonomousTime());
+    chooser.setDefaultOption("Auto Routine Distance", new AutoTime());
+    chooser.addOption("Auto Routine Time", new AutoTime());
     SmartDashboard.putData(chooser);
   }
 
