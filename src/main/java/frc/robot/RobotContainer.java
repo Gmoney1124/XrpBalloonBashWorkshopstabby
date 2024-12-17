@@ -67,13 +67,12 @@ public class RobotContainer {
     //Task 5B. Bind button(s) to move the arm to different angle(s)
 
 
-
     //[Veteran Challenge] Arm moves with Trigger
 
 
     // Setup SmartDashboard options
-    chooser.setDefaultOption("Auto Routine Distance", new AutoTime());
-    chooser.addOption("Auto Routine Time", new AutoTime());
+    chooser.setDefaultOption("Auto Routine Time", new AutoTime());
+    chooser.addOption("Auto Routine Distance", new AutoDistance());
     SmartDashboard.putData(chooser);
   }
 

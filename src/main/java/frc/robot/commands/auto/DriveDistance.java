@@ -20,10 +20,10 @@ public class DriveDistance extends Command {
    * @param inches The number of inches the robot will drive
    * @param drive The drivetrain subsystem on which this command will run
    */
-  public DriveDistance(double speed) { //add another parameter here for inches
+  public DriveDistance(double speed) { //13C. add another parameter here for inches
     
     this.speed = speed;
-    this.distance = 0; //make the distance field save the distance parameter
+    this.distance = 0; // 13D. make the distance field save the distance parameter
     drive = Drivetrain.getInstance();
     
     addRequirements(drive);
@@ -39,21 +39,21 @@ public class DriveDistance extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    //Can you move the robot forward with the speed given?
+    //13E. Can you move the robot forward with the speed given?
 
   }
 
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    // Can you make the motors stop when the command ends?
+    // 13F. Can you make the motors stop when the command ends?
 
   }
 
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    //When should we stop moving forward?  By only looking at the left wheel?
+    // 13G. When should we stop moving forward?  By only looking at the left wheel?
     if( Math.abs(drive.getLeftDistanceInch()) >= 0){
       return true;
     } else {

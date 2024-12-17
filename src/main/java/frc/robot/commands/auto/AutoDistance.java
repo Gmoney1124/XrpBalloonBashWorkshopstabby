@@ -4,7 +4,6 @@
 
 package frc.robot.commands.auto;
 
-import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 
 public class AutoDistance extends SequentialCommandGroup {
@@ -14,11 +13,13 @@ public class AutoDistance extends SequentialCommandGroup {
    *
    * @param drivetrain The drivetrain subsystem on which this command will run
    */
-  public AutoDistance(Drivetrain drivetrain) {
+  public AutoDistance() {
     addCommands(
-        //new DriveDistance(-0.5, 10),
+              //14D
+        //new DriveDistance(-0.5, 10),  //14A
         new TurnDegrees(-0.5, 180),
-        //new DriveDistance(-0.5, 10),
+              //14C
+        //new DriveDistance(-0.5, 10),  //14A
         new TurnDegrees(0.5, 180));
   }
 }
